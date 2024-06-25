@@ -9,22 +9,18 @@
 <body>
     <h1>Formulário de Chamados</h1>
     <form action="{{ url_for('criar_chamado') }}" method="post">
-        <!-- Campo de Data -->
         <div class="form-group">
             <label for="data">Data:</label>
             <input type="date" id="data" name="data" required>
         </div>
-        <!-- Campo de Horário -->
         <div class="form-group">
             <label for="horario">Horário:</label>
             <input type="time" id="horario" name="horario" required>
         </div>
-        <!-- Campo de Número do Chamado -->
         <div class="form-group">
             <label for="numero_chamado">Número do Chamado:</label>
             <input type="text" id="numero_chamado" name="numero_chamado" required>
         </div>
-        <!-- Campos de Endereço -->
         <div class="form-group">
             <label for="endereco">Endereço:</label>
             <input type="text" id="endereco" name="endereco" required>
@@ -41,31 +37,28 @@
             <label for="cidade">Cidade:</label>
             <input type="text" id="cidade" name="cidade" required>
         </div>
-        <!-- Campo de Nome da Empresa -->
         <div class="form-group">
             <label for="nome_empresa">Nome da Empresa:</label>
             <input type="text" id="nome_empresa" name="nome_empresa" required>
         </div>
-        <!-- Campo de Contato ou Telefone da Empresa Atendida -->
         <div class="form-group">
-            <label for="contato_empresa">Contato da Empresa Atendida:</label>
+            <label for="contato_empresa">Contato da Empresa:</label>
             <input type="text" id="contato_empresa" name="contato_empresa" required>
         </div>
         <div class="form-group">
-            <label for="responsavel_3am">Responsável pelo Chamado na 3AM IT Services:</label>
-            <input type="text" id="responsavel_3am" name="responsavel_3am" required>
-        </div>
-        <!-- Campos restantes -->
-        <div class="form-group">
-            <label for="defeito">Descrição do Defeito:</label>
-            <textarea id="defeito" name="defeito" rows="4" required></textarea>
+            <label for="responsavel">Responsável:</label>
+            <input type="text" id="responsavel" name="responsavel" required>
         </div>
         <div class="form-group">
-            <label for="servico">Serviço a Ser Executado:</label>
+            <label for="defeito">Defeito:</label>
+            <input type="text" id="defeito" name="defeito" required>
+        </div>
+        <div class="form-group">
+            <label for="servico">Serviço a ser executado:</label>
             <input type="text" id="servico" name="servico" required>
         </div>
         <div class="form-group">
-            <label for="modelo">Modelo do Equipamento:</label>
+            <label for="modelo">Modelo:</label>
             <input type="text" id="modelo" name="modelo" required>
         </div>
         <div class="form-group">
@@ -73,20 +66,18 @@
             <input type="text" id="numero_serie" name="numero_serie" required>
         </div>
         <div class="form-group">
-            <label for="status">Status do Chamado:</label>
+            <label for="status">Status:</label>
             <select id="status" name="status" required>
-                <option value="Pendente">Pendente</option>
-                <option value="Em Andamento">Em Andamento</option>
-                <option value="Concluído">Concluído</option>
+                <option value="Aberto">Aberto</option>
+                <option value="Em andamento">Em andamento</option>
+                <option value="Fechado">Fechado</option>
             </select>
         </div>
         <div class="form-group">
             <label for="observacoes">Observações:</label>
-            <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+            <textarea id="observacoes" name="observacoes"></textarea>
         </div>
-        <div class="form-group">
-            <input type="submit" value="Criar Chamado">
-        </div>
+        <button type="submit">Criar Chamado</button>
     </form>
 </body>
 </html>
