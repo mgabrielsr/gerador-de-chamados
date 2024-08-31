@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Chamados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_form_chamado.css') }}">
+</head>
+<body>
+    <h1>Formulário de Chamados</h1>
+    <form method="post" action="{{ url_for('abrir_chamado') }}">
+
+        <div class="row">
+            <div class="column">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            
+            <div class="column">
+                <label for="horario">Horário:</label>
+                <input type="time" id="horario" name="horario" required>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="column">
+                <label for="numero_chamado">N° do Chamado:</label>
+                <input type="text" id="numero_chamado" name="numero_chamado" required>
+            </div>
+
+            <div class="column">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="column">
+                <label for="numero">N°:</label>
+                <input type="text" id="numero" name="numero" required>
+            </div>
+
+            <div class="column">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="column">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+
+            <div class="column">
+                <label for="nome_empresa">Nome da Empresa:</label>
+                <input type="text" id="nome_empresa" name="nome_empresa" required>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="column">
+                <label for="defeito">Defeito:</label>
+                <input type="text" id="defeito" name="defeito" required>
+            </div>
+
+            <div class="column">
+                <label for="servico">Serviço a ser executado:</label>
+                <input type="text" id="servico" name="servico" required>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="column">
+                <label for="modelo_equipamento">Modelo do Equipamento:</label>
+                <input type="text" id="modelo_equipamento" name="modelo_equipamento" required>
+            </div>
+
+            <div class="column">
+                <label for="numero_serie">N° Série:</label>
+                <input type="text" id="numero_serie" name="numero_serie" required>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="column">
+                <label for="responsavel">Responsável:</label>
+                <input type="text" id="responsavel" name="responsavel" required>
+            </div>
+
+            <div class="column">
+                <label for="contato">Contato:</label>
+                <input type="text" id="contato" name="contato" required>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="column">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="column">
+                <label for="observacao">Observação:</label>
+                <textarea id="observacao" name="observacao"></textarea>
+            </div>
+        </div>
+    
+        <button type="submit">Abrir Chamado</button>
+    </form>
+</body>
+</html>

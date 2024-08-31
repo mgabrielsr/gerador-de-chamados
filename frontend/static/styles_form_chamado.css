@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    margin: 2rem;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #f7931a;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.column {
+    width: 48%; /* Ajuste conforme necessário */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    color: #666;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #f7931a;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.05);
+    background-color: #ff7900;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="email"],
+textarea,
+select:focus {
+    outline: none;
+    border: 2px solid #f7931a;
+    box-shadow: 0 0 5px rgba(247, 147, 26, 0.5); /* Corrigido o valor de rgba */
+}
